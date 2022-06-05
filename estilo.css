@@ -293,3 +293,47 @@ textarea {
 h1{
   text-align: center;
 }
+
+.cont{
+  display: flex;
+  text-align: justify;
+
+}
+.cont .dis1 h2{
+  text-align: center;
+  align-content: center;
+  background-color: #0e1130;
+  color: rgb(165, 168, 227);
+  font-size: 2rem;
+  margin: 5px;
+  border-radius: 5px;
+
+}
+.cont .dis1 p{
+  margin: 4px;
+  font-family: cursive;
+  font-weight: 300;
+}
+.cont .dis1{
+  width: 50vw;
+  background: #00b7ff;
+  margin: 3px;
+  border-radius: 3px;
+
+}
+.dis1 .teorema {
+  background-color: #73b2ed;
+  margin: 6px;
+  border-radius: 7px;
+
+}
+.teorema .definicion {
+  background-color: #0e1130;
+  color: rgb(165, 168, 227);
+  font-size: 1.5rem;
+  margin: 5px;
+  border-radius: 2px;
+  padding: 3px;
+  
+
+}
