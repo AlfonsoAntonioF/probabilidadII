@@ -61,7 +61,29 @@
                     </h3>
                     <p class="teorem">
                         EJEMPLO <br>
-                        Sea
+                        Consideremos la siguiente función de distribución conjunta <br>
+                        
+                        $$ F_{X,Y}(x,y)= 
+                        \left\{ \begin{array}{lcc}
+                        0 & x < 0,y< 0 \\
+                        \\ \frac{xy}{4} & 0 \leq x,y < 2 \\
+                        \\ \frac{x}{2} & 0 \leq x < 2,y \geq 2\\
+                        \\ \frac{y}{2} & 0 \leq y < 2,x \geq 2\\
+                        \\ 1 & resto
+                        \end{array}
+                        \right.$$
+
+                        Para calcular la función de distribución marginal  de X tenemos que hacer tender a la variable y al infinito en las regiones donde sea posible.
+                        Esto puede hacerse  en las regiones dadas por las condiciones del primer,tercer y quinto renglón, dando como resultado <br>
+                        $$ F_{X}(x)=
+                        \left\{ \begin{array}{lcc}
+                        0 & x < 0 \\
+                        
+                        \\ \frac{x}{2} & 0 \leq x < 2\\
+                       
+                        \\ 1 & x \geq 2
+                        \end{array}
+                        \right. $$
 
 
 
@@ -93,7 +115,7 @@
                         Ejemplos
                     </h3>
                     <p class="teorem">
-                        EJEMPLO (CASO CONTINUO) <br>
+                        EJEMPLO  <br>
                         Sean X e Y variables aleatorias continuas cuya funcion de densidad conjunta está dada por
                         $$ f_{X,Y}(x,y)=\left\{ \begin{array}{lcc}
                         10x^2y & 0\leq y\leq x \leq 1 \\
@@ -110,14 +132,14 @@
                     <p class="teorem">
                         Para calcular la función de densidad marginal de X hacemos: <br>
                         $$ f_{X}(x)= \left\{ \begin{array}{lcc}
-                        \displaystyle\int_{0}^{x}10x^2y dy = 5x^4 & 0\leq  x \leq 1 \\
+                        \displaystyle\int_{0}^{x}10x^2y dy = 5x^4 & 0 < x < 1 \\
 
                         \\ 0 & resto
                         \end{array}
                         \right.$$
                         Entonces <br>
                         $$ f_{X}(x)= \left\{ \begin{array}{lcc}
-                         5x^4 & 0\leq  x \leq 1 \\
+                         5x^4 & 0 <  x < 1 \\
 
                         \\ 0 & resto
                         \end{array}
@@ -128,14 +150,14 @@
                     <p class="teorem">
                         Ahora para calcular la función de densidad marginal de Y hacemos: <br>
                         $$ f_{Y}(y)= \left\{ \begin{array}{lcc}
-                        \displaystyle\int_{x=y}^{1}10x^2y dy = \frac{10}{3}y(1-y^{3}) & 0\leq  x \leq 1 \\
+                        \displaystyle\int_{x=y}^{1}10x^2y dy = \frac{10}{3}y(1-y^{3}) & 0 <  y < 1 \\
 
                         \\ 0 & resto
                         \end{array}
                         \right.$$
                         Entonces <br>
                         $$ f_{Y}(y)= \left\{ \begin{array}{lcc}
-                        \frac{10}{3}y(1-y^{3}) & 0\leq  y \leq 1 \\
+                        \frac{10}{3}y(1-y^{3}) & 0<  y < 1 \\
 
                         \\ 0 & resto
                         \end{array}
@@ -165,7 +187,27 @@
                     </h3>
                     <p class="teorem">
                         EJEMPLO <br>
+                        <p class="teorem">
+                            La densidad conjunta de las variables aleatorias (X,Y) esta definida por <br>
+                            $$ f(x,y)=\left\{ \begin{array}{lcc}
+                            10xy^2 & 0 < x < y < 1 \\
+    
+                            \\ 0 & otro caso
+                            \end{array}
+                            \right. $$
+                            Calcular las densidades marginales y la función de densidad condicional
+                        </p>
 
+                    </p>
+                    <p class="teorem">
+                        Solución <br>
+                        Por definición tenemos
+                        $$ f(x)= \displaystyle \int_{x}^{1}10xy^2dy=\frac{10}{3}xy^3|_{y=x}^{y=1}=\frac{10}{3}x(1-x^3),0 < x < 1   $$
+                        y 
+                        $$ f(y)=\displaystyle \int_{0}^{y}10xy^2dx=5x^2y^2|_{x=0}^{x=y}=5y^4,0< y < 1  $$
+                        <br>
+                        Enotonces 
+                        $$ f(x|y)=\displaystyle \frac{f(x,y)}{f(y)}=\frac{10xy^2}{\frac{10}{3}x(1-x^3)},0 < x < y < 1   $$
                     </p>
                 </div>
             </div>
