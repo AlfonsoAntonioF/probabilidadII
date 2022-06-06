@@ -353,10 +353,17 @@ h1{
   .cont .dis1{
     width: 100%;
   }
-
+  .texto{
+    width: 100vw;
+    align-content: center;
+  }
   .texto p{
     font-size: 10px;
     text-align: center;
+  }
+
+  .titleprincipal h1{
+    font-size: 25px;
   }
 
 
