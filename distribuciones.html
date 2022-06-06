@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="./estilo.css">
-    
+
 </head>
+
 <body>
     <header>
         <div class="menu">
@@ -26,117 +28,124 @@
                 <li class="fcfm"> <img src="./img/fcfm.png" alt="buap.img"> </li>
             </ul>
         </div>
-        
+
     </header>
     <!--<div class="relleno" ></div>-->
-    <div class="titleprincipal"><h1>Distribuciones Marginales y Distribución Condicional </h1></div>
-    <div class="introducion"   >
-        
+    <div class="titleprincipal">
+        <h1>Distribuciones Marginales y Distribución Condicional </h1>
+    </div>
+    <div class="introducion">
+
     </div>
     <div class="cont">
 
         <div class="dis1">
             <h2>Distribución Marginal </h2>
-            <p>Dada una función de distribución $$F(x,y)$$  de un vector aleatorio (X,Y), se puede obtener la función de distribución de cada variable aleatoria por separado de la siguiente forma </p>
-        <div class="teorema">
-            <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DISTRIBUCIÓN MARGINAL)</h3>
-            <p class="teorem">
-                Sea (X,Y) un  vector con función de distribución F(x,y). A la función
-                $$ F(x)=lim_{y\rightarrow\infty} F(x,y) $$
-                Se le conoce como la función de distribución marginal de X. <br>
-                Análogamente se define la función de distribución marginal de Y como 
-                $$ F(y)=lim_{x\rightarrow\infty} F(x,y) $$
-            </p>
-            
-        </div>
-        <div class="densidades">
+            <p>Dada una función de distribución $$F(x,y)$$ de un vector aleatorio (X,Y), se puede obtener la función de
+                distribución de cada variable aleatoria por separado de la siguiente forma </p>
             <div class="teorema">
-                <h3 class="definicion">
-                    Ejemplos
-                </h3>
+                <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DISTRIBUCIÓN MARGINAL)</h3>
                 <p class="teorem">
-                    EJEMPLO <br>
-
+                    Sea (X,Y) un vector con función de distribución F(x,y). A la función
+                    $$ F(x)=lim_{y\rightarrow\infty} F(x,y) $$
+                    Se le conoce como la función de distribución marginal de X. <br>
+                    Análogamente se define la función de distribución marginal de Y como
+                    $$ F(y)=lim_{x\rightarrow\infty} F(x,y) $$
                 </p>
+
+            </div>
+            <div class="densidades">
+                <div class="teorema">
+                    <h3 class="definicion">
+                        Ejemplos
+                    </h3>
+                    <p class="teorem">
+                        EJEMPLO <br>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="densidades">
+                <div class="teorema">
+                    <h3 class="definicion">
+                        DEFINICIÓN.( FUNCIÓN DE DENSIDAD MARGINAL )
+                    </h3>
+                    <p class="teorem">
+                        Sea (X,Y) un vector absolutamente continuo con funcion de densidad f(x,y). <br>
+                        A la función $$ f(x)=\int_{-\infty}^{\infty} f(x,y)dy $$
+                        Se le conoce como la función de densidad marginal de X.
+                    </p>
+                    <p class="teorem">
+                        De manera análoga podemos definir a la funcion de densidad marginal de Y como <br>
+                        $$ f(y)=\int_{-\infty}^{\infty} f(x,y)dx $$
+                    </p>
+                </div>
+            </div>
+            <div class="densidades">
+                <div class="teorema">
+                    <h3 class="definicion">
+                        Ejemplos
+                    </h3>
+                    <p class="teorem">
+                        EJEMPLO <br>
+
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="densidades">
+        <div class="dis1">
+            <h2>Distribución Condicional </h2>
             <div class="teorema">
-                <h3 class="definicion">
-                    DEFINICIÓN.( FUNCIÓN DE DENSIDAD MARGINAL )
-                </h3>
+                <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DENSIDAD CONDICIONAL)</h3>
                 <p class="teorem">
-                    Sea (X,Y) un vector absolutamente continuo con funcion de densidad f(x,y). <br>
-                  A la función   $$ f(x)=\int_{-\infty}^{\infty} f(x,y)dy  $$
-                 Se le conoce como la función de densidad marginal de X.
+                    Sea (X,Y) un vector con función de densidad $$ f_{X,Y}(x,y)$$ y sea y tal que $$ f_{Y}(y)\neq 0 $$
+                    <br>
+                    A la función $$ f_{X|Y}(x|y)=\frac{f_{X,Y}(X,Y)}{f_{Y}(y)} $$
+                    Se le conoce como la funcion de densidad condicional de X dado que Y toma el valor de y.
                 </p>
-                <p class="teorem">
-                    De manera análoga podemos definir a la funcion de densidad marginal de Y como <br>
-                    $$ f(y)=\int_{-\infty}^{\infty} f(x,y)dx  $$
-                </p>
+
             </div>
-        </div>
-        <div class="densidades">
+            <div class="densidades">
+                <div class="teorema">
+                    <h3 class="definicion">
+                        Ejemplos
+                    </h3>
+                    <p class="teorem">
+                        EJEMPLO <br>
+
+                    </p>
+                </div>
+            </div>
+
             <div class="teorema">
-                <h3 class="definicion">
-                    Ejemplos
-                </h3>
+                <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DISTRIBUCIÓN CONDICIONAL)</h3>
                 <p class="teorem">
-                    EJEMPLO <br>
+                    Sea (X,Y) un vector aleatorio absolutamente continuo con funcion de densidad
+                    $$f_{X,Y} (x,y)$$, y sea y tal que $$f_{Y} (y) \neq 0$$ A la funcion
+                    $$  F_{X|Y}(x|y)=\int_{-\infty}^{x}f_{X|Y}(u|y)du $$
+                    se le conoce como la funcion de distribucion condicional de X dado que Y
+                    toma el valor y. Cuando el vector aleatorio (X,Y ) es discreto la integral
+                    se substituye por la suma correspondiente.</p>
 
-                </p>
             </div>
-        </div>
-        </div>
-    <div  class="dis1" >  
-        <h2>Distribución Condicional </h2> 
-        <div class="teorema">
-            <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DENSIDAD CONDICIONAL)</h3>
-            <p class="teorem">
-                Sea (X,Y) un  vector con función de densidad $$ f_{X,Y}(x,y)$$ y sea y tal que $$  f_{Y}(y)\neq 0  $$ <br>
-                A la función $$ f_{X|Y}(x|y)=\frac{f_{X,Y}(X,Y)}{f_{Y}(y)} $$
-                Se le conoce como la funcion de densidad condicional de X dado que Y toma el valor de y.
-            </p>
-            
-        </div>
-        <div class="densidades">
-            <div class="teorema">
-                <h3 class="definicion">
-                    Ejemplos
-                </h3>
-                <p class="teorem">
-                    EJEMPLO <br>
+            <div class="densidades">
+                <div class="teorema">
+                    <h3 class="definicion">
+                        Ejemplos
+                    </h3>
+                    <p class="teorem">
+                        EJEMPLO <br>
 
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="teorema">
-            <h3 class="definicion">DEFINICIÓN.(FUNCIÓN DE DISTRIBUCIÓN CONDICIONAL)</h3>
-            <p class="teorem">
-                Sea (X,Y) un  vector con función de densidad $$ f_{X,Y}(x,y)$$ y sea y tal que $$  f_{Y}(y)\neq 0  $$ <br>
-                A la función $$ f_{X|Y}(x|y)=\frac{f_{X,Y}(X,Y)}{f_{Y}(y)} $$
-                Se le conoce como la funcion de densidad condicional de X dado que Y toma el valor de y.
-            </p>
-            
         </div>
-        <div class="densidades">
-            <div class="teorema">
-                <h3 class="definicion">
-                    Ejemplos
-                </h3>
-                <p class="teorem">
-                    EJEMPLO <br>
-
-                </p>
-            </div>
-        </div>
-    
     </div>
-    </div>
-    
 
-    
+
+
 </body>
+
 </html>
