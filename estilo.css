@@ -337,3 +337,23 @@ h1{
   
 
 }
+
+@media only screen and (max-width: 600px){
+  .buap {
+    display: none;
+  }
+  .fcfm{
+    display: none;
+  }
+  .cont{
+    display: inline;
+  
+
+  }
+  .cont .dis1{
+    width: 100%;
+  }
+
+
+
+}
