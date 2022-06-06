@@ -61,6 +61,11 @@
                     </h3>
                     <p class="teorem">
                         EJEMPLO <br>
+                        Sea
+
+
+
+
 
                     </p>
                 </div>
@@ -88,7 +93,54 @@
                         Ejemplos
                     </h3>
                     <p class="teorem">
-                        EJEMPLO <br>
+                        EJEMPLO (CASO CONTINUO) <br>
+                        Sean X e Y variables aleatorias continuas cuya funcion de densidad conjunta está dada por
+                        $$ f_{X,Y}(x,y)=\left\{ \begin{array}{lcc}
+                        10x^2y & 0\leq y\leq x \leq 1 \\
+
+                        \\ 0 & resto
+                        \end{array}
+                        \right.$$
+                        Calcular las funciones de densidad marginales de las variables aleatorias X e Y.
+
+
+
+                    </p>
+                    <p class="teorem">Solución :</p>
+                    <p class="teorem">
+                        Para calcular la función de densidad marginal de X hacemos: <br>
+                        $$ f_{X}(x)= \left\{ \begin{array}{lcc}
+                        \displaystyle\int_{0}^{x}10x^2y dy = 5x^4 & 0\leq  x \leq 1 \\
+
+                        \\ 0 & resto
+                        \end{array}
+                        \right.$$
+                        Entonces <br>
+                        $$ f_{X}(x)= \left\{ \begin{array}{lcc}
+                         5x^4 & 0\leq  x \leq 1 \\
+
+                        \\ 0 & resto
+                        \end{array}
+                        \right. $$
+
+
+                    </p>
+                    <p class="teorem">
+                        Ahora para calcular la función de densidad marginal de Y hacemos: <br>
+                        $$ f_{Y}(y)= \left\{ \begin{array}{lcc}
+                        \displaystyle\int_{x=y}^{1}10x^2y dy = \frac{10}{3}y(1-y^{3}) & 0\leq  x \leq 1 \\
+
+                        \\ 0 & resto
+                        \end{array}
+                        \right.$$
+                        Entonces <br>
+                        $$ f_{Y}(y)= \left\{ \begin{array}{lcc}
+                        \frac{10}{3}y(1-y^{3}) & 0\leq  y \leq 1 \\
+
+                        \\ 0 & resto
+                        \end{array}
+                        \right. $$
+
 
                     </p>
                 </div>
@@ -123,7 +175,7 @@
                 <p class="teorem">
                     Sea (X,Y) un vector aleatorio absolutamente continuo con funcion de densidad
                     $$f_{X,Y} (x,y)$$, y sea y tal que $$f_{Y} (y) \neq 0$$ A la funcion
-                    $$  F_{X|Y}(x|y)=\int_{-\infty}^{x}f_{X|Y}(u|y)du $$
+                    $$ F_{X|Y}(x|y)=\int_{-\infty}^{x}f_{X|Y}(u|y)du $$
                     se le conoce como la funcion de distribucion condicional de X dado que Y
                     toma el valor y. Cuando el vector aleatorio (X,Y ) es discreto la integral
                     se substituye por la suma correspondiente.</p>
