@@ -232,6 +232,33 @@
                         EJEMPLO <br>
 
                     </p>
+                    <p class="teorem">
+                        Consideremos la función de densidad conjunta 
+                        $$  f_{X,Y}(x,y)= 
+                        \left\{ \begin{array}{lcc}
+                        24x(1-y) & 0 < x < y < 1 \\
+
+                        \\ 0 & otro caso
+                        \end{array}
+                        \right. $$
+                        cuya función de densidad condicional esta dada por
+                        $$  f_{X|Y}(x|y)= 
+                        \left\{ \begin{array}{lcc}
+                        \displaystyle \frac{2x}{y^2} & 0 < x < y < 1 \\
+
+                        \\ 0 & otro caso
+                        \end{array}
+                        \right. $$
+                        Entonces para un y fijo en el intervalo (0,1) se tiene que <br>
+                        $$ F_{X|Y}(x|y)= \displaystyle \int_{-\infty}^{x}f_{X|Y}(u|y)du =
+                        \left\{ \begin{array}{lcc}
+                        0 & x \leq 0\\
+                        \\ \displaystyle \frac{x^2}{y^2} & 0 < x < y  \\
+
+                        \\ 1 & x \geq y
+                        \end{array}
+                        \right.   $$
+                    </p>
                 </div>
             </div>
 
