@@ -354,6 +354,11 @@ h1{
     width: 100%;
   }
 
+  .texto p{
+    font-size: 10px;
+    text-align: center;
+  }
+
 
 
 }
