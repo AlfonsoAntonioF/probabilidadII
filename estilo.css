@@ -6,7 +6,7 @@
 }
 .menu{
     width: 100%;
-    position: fixed;
+    position: relative;
     background-color: rgb(149, 215, 248);
     background: linear-gradient(to top,rgb(149, 215, 248),rgb(152, 148, 250) );
     height: auto;
